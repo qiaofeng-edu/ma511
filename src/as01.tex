@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\title{MA511 A01}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{setspace}
+
+\geometry{hmargin={2cm,0.8in},height=8in}
+\geometry{height=10in}
+
+\usepackage{paralist}
+\usepackage{enumerate}
+\usepackage{amsfonts}
+\usepackage{verbatim}
+
+\pagestyle{empty}
+
+
+\setlength{\parindent}{0pt}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+
+\newtheorem{thm}{Theorem}%[section]
+\newtheorem{lem}{Lemma}%[theorem]
+\newtheorem{prop}{Proposition}%[theorem]
+\newtheorem{cor}{Corollary}%[theorem]
+\newtheorem{defn}{Definition}
+
+
+\begin{document}
+\begin{flushleft}
+{\sc \Large Real Analysis} \\ 
+\medskip
+Assignment 01\\
+May 20, 2020
+\hfill Name: Feng Qiao \\
+
+\setdefaultleftmargin{0pt}{}{}{}{}{}
+
+
+\begin{defn}
+(Ordering of the natural numbers). Let \(n\) and \(m\) be natural numbers. We say that \(n\) is greater than or equal to \(m\), and write \(n \geq m\) or \(m \leq n\), iff (this is short for if and only if) we have \(n = m + a\) for some natural number \(a\).  We say that \(n\) is strictly greater than \(m\), and write \(n > m\) or \(m < n\), iff
+\(n \geq m\) and \(n \neq m\).
+\end{defn}
+
+Let \(a, b, c\) be natural numbers. Prove order is transitive: If \(a \geq b\) and \(b \geq c\), then \(a \geq c\).
+
+\end{flushleft}
+
+\begin{doublespace}
+By \(a \geq b\), we have \(a = b + t_1 \), and \(b \geq c \) gives \(b = c + t_2 \) (\(t_1, t_2 \in \mathbf{N} \)).
+
+Then we have \(a = (c + t_2) + t_1 \).
+
+Because addition is associative (Prop 2.2.5), we know \( (c+ t_2) + t_1 = c + (t_2 + t_1) \).
+
+Because addition of two natural numbers is a natural number, we know \(t_2 + t_1 = t_3\) for some \(t_3 \in \mathbf{N}\). Then we have \(a = c + t_3 \). Therefore, \(a \geq c \).
+\end{doublespace}
+
+\end{document}
