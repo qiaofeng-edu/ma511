@@ -45,6 +45,7 @@ May 21, 2020
 
 \textbf{Proof:}
 \renewcommand{\labelenumi}{\alph{enumi})}
+\renewcommand{\labelenumii}{\arabic{enumii})}
 \begin{enumerate}
     \item \(A \subseteq B \implies A \cup B = B\) \\
     Let \(A\) and $B$ be sets. %anything between \(...\) or $...$ is math text.  There is no difference between the two commands.  Use the % to comment the rest of the line.
@@ -70,7 +71,21 @@ May 21, 2020
 
     \item \(A \cap B =A \implies A \cup B =B \)\\
     For any \(x \in B\), it must be that \(x \in B\) or \(x \in A\), which means \(y \in A \cup B\); then \(B \subseteq A \cup B\).\\
-    For any \(y \in A \cup B\), if \(A \cap B = A\)
+    For any \(y \in A \cup B\)
+    \begin{enumerate}
+        \item \(y \in A \) and \(y \notin B\)\\
+        If \(A \cap B =A\), we have \(y \in A \cap B\), which means \(y \in A \) and \(y \in B\).
+        It contradicts \(y \notin B\).
+        Thus, the set will always be empty.
+
+        \item \(y \notin A\) and \(y \in B\)\\
+        Since \(y \in B\), we have \(A \cup B \subseteq B\).
+
+        \item \(y \in A\) and \(y \in B\)\\
+        Since \(y \in B\), we have \(A \cup B \subseteq B\).
+    \end{enumerate}
+    Then we have \(A \cup B \subseteq B\).\\
+    Therefore, \(A \cup B = B\).
 \end{enumerate}
 
 
