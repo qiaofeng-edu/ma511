@@ -37,23 +37,42 @@
 \medskip
 Assignment 02\\
 May 21, 2020
-\hfill Name: \underline{\hspace{3.0in}} \\
+\hfill Name: \underline{Feng Qiao} \\
 
 \setdefaultleftmargin{0pt}{}{}{}{}{}
 
-\textit{Exercise 3.1.5} Let \(A,B\) be sets. Show that the three statements \(A\subseteq B\), \(A \cup B = B\), \(A \cap B = A\) are logically equivalent (any one of them implies the other two).\vfill 
+\textit{Exercise 3.1.5} Let \(A,B\) be sets. Show that the three statements \(A\subseteq B\), \(A \cup B = B\), \(A \cap B = A\) are logically equivalent (any one of them implies the other two).
 
 \textbf{Proof:}
-Let \(A\) and $B$ be sets. %anything between \(...\) or $...$ is math text.  There is no difference between the two commands.  Use the % to comment the rest of the line.
-We want to show that if \(A\subseteq B\), then \(A\cup B=B\).  (To show two sets are equal, we must show they are subsets of each other.)
+\renewcommand{\labelenumi}{\alph{enumi})}
+\begin{enumerate}
+    \item \(A \subseteq B \implies A \cup B = B\) \\
+    Let \(A\) and $B$ be sets. %anything between \(...\) or $...$ is math text.  There is no difference between the two commands.  Use the % to comment the rest of the line.
+    We want to show that if \(A\subseteq B\), then \(A\cup B=B\).  (To show two sets are equal, we must show they are subsets of each other.)\\
+    Let \(x\in A\cup B\), then \(x\in A\) or \(x\in B\).  Since \(A\subseteq B\), it must be the case that \(x\in A\) and \(x\in B\).  Therefore, \(A\cup B\subseteq B\).
+    Let \(x\in B\), then \(x\in B\) or \(x\in A\) so \(x\in A\cup B\).  Therefore, \(B\subseteq A\cup B\).  Thus, if \(A\subseteq B\), then \(A\cup B=B\).
 
-Let \(x\in A\cup B\), then \(x\in A\) or \(x\in B\).  Since \(A\subseteq B\), it must be the case that \(x\in B\) or \(x\in B\).  Therefore, \(A\cup B\subseteq B\).
+    \item \( A \cup B = B \implies  A \subseteq B\) \\
+    For any \(x \in A\), it must be true that \(x \in A \) or \(x \in B\), then \(x \in A \cup B\). If \(A \cup B = B\), then \(x \in B\); therefore, \(A \subseteq B\).
 
-Let \(x\in B\), then \(x\in B\) or \(x\in A\) so \(x\in A\cup B\).  Therefore, \(B\subseteq A\cup B\).  Thus, if \(A\subseteq B\), then \(A\cup B=B\).\vfill
+    \item \(A \subseteq B \implies A \cap B =A\)\\
+    For any \(x \in A \cap B\), we have \(x \in A\) and \(x \in B\); then \(A \cap B \subseteq A\).\\
+    For any \(y \in A\), if \(A \subseteq B\), we have \(y \in A \) and \(y \in B\), then \(y \in A \cap B\). Thus, \(A \subseteq A \cap B\).\\
+    Therefore, \(A \cap B = A\).
 
-Prove if \(A\cup B=B\), then \(A\cap B=A\).\vfill
+    \item \(A \cap B =A \implies  A \subseteq B\)\\
+    For any \(x \in A\), if \(A \cap B =A\), we have \(x \in A \cap B\), which means \(x \in A\) and \(x \in B\). It must be that \(x \in B\). Therefore, \(A \subseteq B\).
 
-Prove if \(A\cap B=A\), then \(A\subseteq B\).\vfill
+    \item \(A \cup B = B \implies A \cap B = A\)\\
+    By proof c), we have \(A \cap B \subseteq A\).\\
+    For any \(y \in A\), it must be true that \(y \in A\) or \(y \in B\); then \(y \in A \cup B\). If \(A \cup B = B\), we have \(y \in B\). Then \(y \in A\) and \(y \in B\), which means \(y \in A \cap B\). Thus \(A \subseteq A \cap B\).\\
+    Therefore, \(A \cap B = A\).
+
+    \item \(A \cap B =A \implies A \cup B =B \)\\
+    For any \(x \in B\), it must be that \(x \in B\) or \(x \in A\), which means \(y \in A \cup B\); then \(B \subseteq A \cup B\).\\
+    For any \(y \in A \cup B\), if \(A \cap B = A\)
+\end{enumerate}
+
 
 
 \end{flushleft}
