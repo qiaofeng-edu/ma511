@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\title{MA511 A02}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{tikz}
+
+\geometry{hmargin={2cm,0.8in},height=8in}
+\geometry{height=10in}
+
+\usepackage{paralist}
+\usepackage{enumerate}
+\usepackage{amsfonts}
+\usepackage{verbatim}
+
+\pagestyle{empty}
+
+
+\setlength{\parindent}{0pt}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+
+\newtheorem{thm}{Theorem}%[section]
+\newtheorem{lem}{Lemma}%[theorem]
+\newtheorem{prop}{Proposition}%[theorem]
+\newtheorem{cor}{Corollary}%[theorem]
+\newtheorem{defn}{Definition}
+
+
+\begin{document}
+\begin{flushleft}
+{\sc \Large Real Analysis} \\ 
+\medskip
+Assignment 02\\
+May 21, 2020
+\hfill Name: \underline{\hspace{3.0in}} \\
+
+\setdefaultleftmargin{0pt}{}{}{}{}{}
+
+\textit{Exercise 3.1.5} Let \(A,B\) be sets. Show that the three statements \(A\subseteq B\), \(A \cup B = B\), \(A \cap B = A\) are logically equivalent (any one of them implies the other two).\vfill 
+
+\textbf{Proof:}
+Let \(A\) and $B$ be sets. %anything between \(...\) or $...$ is math text.  There is no difference between the two commands.  Use the % to comment the rest of the line.
+We want to show that if \(A\subseteq B\), then \(A\cup B=B\).  (To show two sets are equal, we must show they are subsets of each other.)
+
+Let \(x\in A\cup B\), then \(x\in A\) or \(x\in B\).  Since \(A\subseteq B\), it must be the case that \(x\in B\) or \(x\in B\).  Therefore, \(A\cup B\subseteq B\).
+
+Let \(x\in B\), then \(x\in B\) or \(x\in A\) so \(x\in A\cup B\).  Therefore, \(B\subseteq A\cup B\).  Thus, if \(A\subseteq B\), then \(A\cup B=B\).\vfill
+
+Prove if \(A\cup B=B\), then \(A\cap B=A\).\vfill
+
+Prove if \(A\cap B=A\), then \(A\subseteq B\).\vfill
+
+
+\end{flushleft}
+
+\end{document}
