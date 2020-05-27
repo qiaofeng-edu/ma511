@@ -38,6 +38,12 @@ f(A \cap B)
 \newcommand{\fxstTwo}{
 \fxab \subseteq \faxb
 }
+\newcommand{\fxstThree}{
+\fxab = \faxb
+}
+\newcommand{\fxstFour}{
+\faxb \subseteq \fxab
+}
 
 \newtheorem{thm}{Theorem}%[section]
 \newtheorem{lem}{Lemma}%[theorem]
@@ -79,14 +85,10 @@ May 26, 2020
         \end{aligned}
     \end{equation}
 
-    \begin{equation}
-        \begin{aligned}
-        y \in \fab & \implies y = f(x_3) \quad (x_3 \in A \cap B)\\
-        & \implies y = f(x_3) \quad (x_3 \in A \quad \text{and} \quad x_3 \in B)
-        \end{aligned}
-    \end{equation}
+    For \(y \in \fab\) to be true, we need \(x_1 \in A \cap B\) or \(x_2 \in A \cap B\).
+    That is, \(A \subseteq B\) or \(B \subseteq A\).
 
-    If \(A = B\), it can will always be true that \(x_1 \in A \cap B\). Therefore, \(A = B\) is a sufficient condition for \(\fab = \fasb\).
+    Therefore, \(\fab = \fasb\) if \(A \subseteq B\) or \(B \subseteq A\).
 
     \item \(\fxstTwo\)
 
@@ -98,6 +100,16 @@ May 26, 2020
     Thus, \(x \in A\) and \(x \notin B\); \(x \in A \setminus B\). Therefore, \(y = f(x) \in \faxb\).
 
     Therefore, \(\fxstTwo\)
+
+    \item \(\fxstThree\)
+
+    The statement is true if \(\fxstFour\). We want to prove that for any \(y \in \faxb\), we have
+    \(y \in \fxab\).
+
+    By the definition of function, there exists some \(x_1 \in A \setminus B\) such that \(f(x_1)=y\).
+    Then we have \(x_1 \in A\) and \(x_1 \notin B\). Then we have \(y= f(x_1) \in f(A)\).
+
+    For \(y \in \fxab\) to be true, it must be true that \(y \in f(A)\) and \(y \notin f(B)\).
 
 
 \end{enumerate}
