@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\title{MA511 A03}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{tikz}
+
+\geometry{hmargin={2cm,0.8in},height=8in}
+\geometry{height=10in}
+
+\usepackage{paralist}
+\usepackage{enumerate}
+\usepackage{amsfonts}
+\usepackage{verbatim}
+
+\pagestyle{empty}
+
+
+\setlength{\parindent}{0pt}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+
+\newtheorem{thm}{Theorem}%[section]
+\newtheorem{lem}{Lemma}%[theorem]
+\newtheorem{prop}{Proposition}%[theorem]
+\newtheorem{cor}{Corollary}%[theorem]
+\newtheorem{defn}{Definition}
+
+
+\begin{document}
+\begin{flushleft}
+{\sc \Large Real Analysis} \\ 
+\medskip
+Assignment 03\\
+May 26, 2020
+\hfill Name: \underline{Feng Qiao} \\
+
+\setdefaultleftmargin{0pt}{}{}{}{}{}
+
+\textit{Exercise 3.4.3} Let \(A,B\) be two subsets of a set \(X\), and let \(f : X \ra Y\) be a function. Show that \(f(A \cap B) \subseteq f(A) \cap f(B)\), that \(f(A)\setminus f(B) \subseteq f(A\setminus B)\), \(f(A \cup B) = f(A) \cup f(B)\). For the first two statements, is it true that the \(\subseteq\) relation can be improved to =?
+
+\end{flushleft}
+
+\textbf{Proof:}
+\renewcommand{\labelenumi}{\alph{enumi})}
+\renewcommand{\labelenumii}{\arabic{enumii})}
+\begin{enumerate}
+    \item \(f(A \cap B) \subseteq f(A) \cap f(B)\)\\
+    For any \(y \in f(A \cap B)\), by the definition of function, there exists some \(x \in A \cap B\) such that \(f(x) = y \).
+    Then \(x \in A\) and \(x \in B\). Then we have \(f(x) \in f(A)\) and \(f(x) \in f(B)\). Thus, \(f(x) \in f(A) \cap f(B)\).
+    Then \(y \in f(A) \cap f(B)\). Therefore, \(f(A \cap B) \subseteq f(A) \cap f(B)\).
+
+
+\end{enumerate}
+
+\end{document}
+
