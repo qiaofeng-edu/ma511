@@ -44,6 +44,18 @@ f(A \cap B)
 \newcommand{\fxstFour}{
 \faxb \subseteq \fxab
 }
+\newcommand{\aub}{
+A \cup B
+}
+\newcommand{\faub}{
+    f(\aub)
+}
+\newcommand{\faufb}{
+    f(A) \cup f(B)
+}
+\newcommand{\unionEq}{
+    \faub = \faufb
+}
 
 \newtheorem{thm}{Theorem}%[section]
 \newtheorem{lem}{Lemma}%[theorem]
@@ -110,10 +122,24 @@ May 26, 2020
     Then we have \(x_1 \in A\) and \(x_1 \notin B\). Then we have \(y= f(x_1) \in f(A)\).
 
     For \(y \in \fxab\) to be true, it must be true that \(y \in f(A)\) and \(y \notin f(B)\).
-    One sufficient condition is that \(f\) is injective such that for any \(x_2 \in B\), \(f(x_2) \neq f(x_1)\).
+    One sufficient condition is that \(f\) is injective such that for any \(x_2 \in B\) and \(x_2 \neq x_1\), \(f(x_2) \neq f(x_1)\).
     Thus, \(y \notin f(B)\); \(y \in \fxab\).
 
     Therefore, \(\fxstThree\) if \(f\) is injective.
+
+    \item \(\unionEq\)
+
+    For any \(y_1 \in \faub\), there exists some \(x_1 \in \aub\) such that \(f(x_1) = y_1\).
+    Then we have \(x_1 \in A\) or \(x_1 \in B\). Then \(f(x_1) \in f(A)\) or \(f(x_1) \in f(B)\).
+
+    Thus, \(y_1 \in f(A)\) or \(y_1 \in f(B)\); \(y_1 \in \faufb\). Therefore, \(\faub \subseteq \faufb\).
+
+    For any \(y_2 \in \faufb\), we have \(y_2 \in f(A)\) or \(y_2 \in f(B)\). Then there exist some
+    \(x_2 \in A\) or \(x_3 \in B\) such that \(f(x_2)=y_2\) or \(f(x_3)=y_2\).
+    Since \(A,B \subseteq \aub\), there must exist some \(a \in \aub\) such that \(f(a) =y_2\).
+    Thus, \(y_2 \in \faub\); \(\faufb \subseteq \faub\).
+
+    Therefore, \(\unionEq\).
 
 
 \end{enumerate}
