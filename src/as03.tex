@@ -29,6 +29,15 @@ f(A) \cap f(B)
 \newcommand{\fab}{
 f(A \cap B)
 }
+\newcommand{\fxab}{
+    f(A) \setminus f(B)
+}
+\newcommand{\faxb}{
+    f(A \setminus B)
+}
+\newcommand{\fxstTwo}{
+\fxab \subseteq \faxb
+}
 
 \newtheorem{thm}{Theorem}%[section]
 \newtheorem{lem}{Lemma}%[theorem]
@@ -65,7 +74,8 @@ May 26, 2020
     \begin{equation}
         \begin{aligned}
         y \in \fasb & \implies y \in f(A) \quad \text{and} \quad y \in f(B)\\
-        & \implies y = f(x_1), y = f(x_2) \quad (x_1 \in A, x_2 \in B)
+        & \implies y = f(x_1) \quad \text{and} \quad y = f(x_2) \quad
+        (x_1 \in A \quad \text{and} \quad  x_2 \in B)
         \end{aligned}
     \end{equation}
 
@@ -75,6 +85,19 @@ May 26, 2020
         & \implies y = f(x_3) \quad (x_3 \in A \quad \text{and} \quad x_3 \in B)
         \end{aligned}
     \end{equation}
+
+    If \(A = B\), it can will always be true that \(x_1 \in A \cap B\). Therefore, \(A = B\) is a sufficient condition for \(\fab = \fasb\).
+
+    \item \(\fxstTwo\)
+
+    For any \(y \in \fxab\), we have \(y \in f(A)\) and \(y \notin f(B)\).
+
+    Then there exists some \(x \in A\) such that \(f(x)=y\).
+
+    Suppose that \(x \in B\), then \(y = f(x) \in f(B)\). It contradicts \(y \notin f(B)\).
+    Thus, \(x \in A\) and \(x \notin B\); \(x \in A \setminus B\). Therefore, \(y = f(x) \in \faxb\).
+
+    Therefore, \(\fxstTwo\)
 
 
 \end{enumerate}
