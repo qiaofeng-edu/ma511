@@ -23,6 +23,12 @@
 \newcommand{\Ra}{\Rightarrow}
 \newcommand{\la}{\leftarrow}
 \newcommand{\La}{\Leftarrow}
+\newcommand{\fasb}{
+f(A) \cap f(B)
+}
+\newcommand{\fab}{
+f(A \cap B)
+}
 
 \newtheorem{thm}{Theorem}%[section]
 \newtheorem{lem}{Lemma}%[theorem]
@@ -53,6 +59,22 @@ May 26, 2020
     For any \(y \in f(A \cap B)\), by the definition of function, there exists some \(x \in A \cap B\) such that \(f(x) = y \).
     Then \(x \in A\) and \(x \in B\). Then we have \(f(x) \in f(A)\) and \(f(x) \in f(B)\). Thus, \(f(x) \in f(A) \cap f(B)\).
     Then \(y \in f(A) \cap f(B)\). Therefore, \(f(A \cap B) \subseteq f(A) \cap f(B)\).
+    \item \(\fab = \fasb \)\\
+    The statement is true if \(\fasb \subseteq \fab\). We want to prove that for any \(y \in \fasb\),
+    we can get \(y \in \fab\).
+    \begin{equation}
+        \begin{aligned}
+        y \in \fasb & \implies y \in f(A) \quad \text{and} \quad y \in f(B)\\
+        & \implies y = f(x_1), y = f(x_2) \quad (x_1 \in A, x_2 \in B)
+        \end{aligned}
+    \end{equation}
+
+    \begin{equation}
+        \begin{aligned}
+        y \in \fab & \implies y = f(x_3) \quad (x_3 \in A \cap B)\\
+        & \implies y = f(x_3) \quad (x_3 \in A \quad \text{and} \quad x_3 \in B)
+        \end{aligned}
+    \end{equation}
 
 
 \end{enumerate}
