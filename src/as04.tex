@@ -62,13 +62,41 @@ May 27, 2020
 \begin{enumerate}[(a)]
   \item If \(a-b=p\) for some positive natural number \(p\).
 
-    First, we use the identity function to set \(p\) to an integer: \(p \equiv p\)---0.
+    First, we use the identity function to map \(p\) to an integer: \(p \equiv p\)---0.
 
     Because addition is wel-defined, we have \((a + (-b)) + b =  b + p\).
 
     By laws of algebra, we have \(a + ((-b)+b)=a + 0 =a=b+p\). Then \(a>b\).
 
-    Suppose \(a>b\) when \(a-b\) is not a positive natural number.
+    Next we prove \(a>b\) only if \(a-b\) is a positive natural number. Let \(a -b =n\).
+
+    When \(n =0\), we have
+    \begin{equation*}
+      \begin{aligned}
+        a + (-b) + b &= 0 + b \\
+        a + 0 &=b\\
+        a &= b
+      \end{aligned}
+    \end{equation*}
+
+    When \(n = -q\) for some positive natural number \(q\), we have
+    \begin{equation*}
+      \begin{aligned}
+        a + (-b) + b &= b+(-q) \\
+        a &= b + (-q)
+      \end{aligned}
+    \end{equation*}
+    Suppose \(n=-r\) for some positive natural number \(r\). Then we have
+    \begin{equation*}
+      \begin{aligned}
+        b + r &= b + (-q)\\
+        (-b) + b + r &= (-b) + b + (-q)\\
+        r &= -q
+      \end{aligned}
+    \end{equation*}
+    Because \(r\) and \(q\) are positive natural number, \(n=-r\) can not be true.
+    By the trichotomy of integers, \(n\) can only be equal to a positive natural number.
+    Therefore, \(a > b\) if and only if \(a-b\) is a positive natural number.
 \end{enumerate}
 
 \end{flushleft}
