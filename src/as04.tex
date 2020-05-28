@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\title{MA511 A04}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{tikz}
+
+\geometry{hmargin={2cm,0.8in},height=8in}
+\geometry{height=10in}
+
+\usepackage{paralist}
+\usepackage{enumerate}
+\usepackage{amsfonts}
+\usepackage{verbatim}
+
+\pagestyle{empty}
+
+
+\setlength{\parindent}{0pt}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+
+\newtheorem{thm}{Theorem}%[section]
+\newtheorem{lem}{Lemma}%[theorem]
+\newtheorem{prop}{Proposition}%[theorem]
+\newtheorem{cor}{Corollary}%[theorem]
+\newtheorem{defn}{Definition}
+
+
+\begin{document}
+\begin{flushleft}
+{\sc \Large Real Analysis} \\
+\medskip
+Assignment 04\\
+May 27, 2020
+\hfill Name: Feng Qiao\\
+
+\setdefaultleftmargin{0pt}{}{}{}{}{}
+
+\begin{defn}
+(Ordering of the integers). Let \(n\) and \(m\) be integers. We say that \(n\) is greater than or equal to \(m\), and write \(n \geq m\) or \(m \leq n\),  iff we have \(n = m + a\) for some natural number \(a\). We say that \(n\) is strictly greater than \(m\), and write \(n > m\) or \(m < n\), iff \(n \geq m\) and \(n \neq m\).
+\end{defn}
+
+\begin{lem}
+(Properties of order). Let \(a, b, c\) be integers.
+\begin{enumerate}[(a)]
+    \item \(a > b\) if and only if \(a\)---\(b\) is a positive natural number.
+    \item (Addition preserves order) If \(a > b\), then \(a + c > b + c\).
+    \item (Positive multiplication preserves order) If \(a > b\) and \(c\) is positive, then \(ac > bc\).
+    \item (Negation reverses order) If \(a > b\), then \(-a < -b\).
+    \item (Order is transitive) If \(a > b\) and \(b > c\), then \(a > c\).
+    \item (Order trichotomy) Exactly one of the statements \(a > b\), \(a < b\), or \(a = b\) is true.
+\end{enumerate}
+\end{lem}
+
+Prove the first three properties.
+
+\end{flushleft}
+
+\end{document}
