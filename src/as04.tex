@@ -23,6 +23,7 @@
 \newcommand{\Ra}{\Rightarrow}
 \newcommand{\la}{\leftarrow}
 \newcommand{\La}{\Leftarrow}
+\newcommand{\dsh}{\text{---}}
 
 \newtheorem{thm}{Theorem}%[section]
 \newtheorem{lem}{Lemma}%[theorem]
@@ -97,6 +98,42 @@ May 27, 2020
     Because \(r\) and \(q\) are positive natural number, \(n=-r\) can not be true.
     By the trichotomy of integers, \(n\) can only be equal to a positive natural number.
     Therefore, \(a > b\) if and only if \(a-b\) is a positive natural number.
+
+  \item If \(a>b\), we have \(a = b + p\) for some positive natural number \(p\). Because addition is well-defined,
+    \begin{equation*}
+      \begin{aligned}
+        a + c &= (b+p) + c\\
+        a+c &= (b+c) + p \quad (\text{Laws of algebra})\\
+      \end{aligned}
+    \end{equation*}
+    Therefore, \(a+c > b+c\).
+
+  \item If \(a>b\) we have \(a=b+p\) where \(p\) is a positive natural number.
+    For the integer, we use \(p \equiv p \text{---}0\). Then
+    \begin{equation*}
+      \begin{aligned}
+        ac &= (b+p)c\\
+        ac &= bc+pc
+      \end{aligned}
+    \end{equation*}
+    Because \(c\) is a positive integer, \(c\) is equal to the positive natural number \(c\).
+
+    Mark the two natural number as \(p'\) and \(c'\).
+
+    By the definition of integer multiplication, we have
+    \begin{equation*}
+      \begin{aligned}
+        pc &= (p' \dsh 0) \times (c' \dsh 0)\\
+        &= (p'c' + 00)\dsh (0c' + 0p')\\
+        &= (p'c' + 0)\dsh (0 + 0)\\
+        &= p'c' \dsh 0
+      \end{aligned}
+    \end{equation*}
+    Because positive natural numbers have no zero divisors, \(p'c'\) must be positive.
+    Then \(pc\) is equal to a positive natural number.
+    By the trichotomy of integers, \(pc\) can only be positive.
+
+    Therefore, \(ac > bc\).
 \end{enumerate}
 
 \end{flushleft}
