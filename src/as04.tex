@@ -48,7 +48,7 @@ May 27, 2020
 \begin{lem}
 (Properties of order). Let \(a, b, c\) be integers.
 \begin{enumerate}[(a)]
-    \item \(a > b\) if and only if \(a\)---\(b\) is a positive natural number.
+  \item \(a > b\) if and only if \(a\)---\(b\) is a positive natural number.
     \item (Addition preserves order) If \(a > b\), then \(a + c > b + c\).
     \item (Positive multiplication preserves order) If \(a > b\) and \(c\) is positive, then \(ac > bc\).
     \item (Negation reverses order) If \(a > b\), then \(-a < -b\).
@@ -57,7 +57,19 @@ May 27, 2020
 \end{enumerate}
 \end{lem}
 
-Prove the first three properties.
+\textbf{Proof:}
+
+\begin{enumerate}[(a)]
+  \item If \(a-b=p\) for some positive natural number \(p\).
+
+    First, we use the identity function to set \(p\) to an integer: \(p \equiv p\)---0.
+
+    Because addition is wel-defined, we have \((a + (-b)) + b =  b + p\).
+
+    By laws of algebra, we have \(a + ((-b)+b)=a + 0 =a=b+p\). Then \(a>b\).
+
+    Suppose \(a>b\) when \(a-b\) is not a positive natural number.
+\end{enumerate}
 
 \end{flushleft}
 
