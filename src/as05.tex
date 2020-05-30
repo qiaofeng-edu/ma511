@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\title{MA511 A05}
+
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{tikz}
+
+\geometry{hmargin={2cm,0.8in},height=8in}
+\geometry{height=10in}
+
+\usepackage{paralist}
+\usepackage{enumerate}
+\usepackage{amsfonts}
+\usepackage{verbatim}
+
+\pagestyle{empty}
+
+
+\setlength{\parindent}{0pt}
+
+\newcommand{\ds}{\displaystyle}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+
+\newtheorem{thm}{Theorem}%[section]
+\newtheorem{lem}{Lemma}%[theorem]
+\newtheorem{prop}{Proposition}%[theorem]
+\newtheorem{cor}{Corollary}%[theorem]
+\newtheorem{defn}{Definition}
+
+
+\begin{document}
+\begin{flushleft}
+{\sc \Large Real Analysis} \\ 
+\medskip
+Assignment 05\\
+May 28, 2020
+\hfill Name: \underline{Feng Qiao} \\
+
+\setdefaultleftmargin{0pt}{}{}{}{}{}
+
+\textit{Exercise 4.3.5} Prove that \(2^N \geq N\) for all positive integers \(N\). (Hint: use induction.)
+
+\textbf{Proof:}
+
+When \(N=1\), \(2^1=2^0 \times 2 = 1 \times 2 = 2\). Thus, \(2^N \ge N \)  is true when \(N=1\).
+
+Suppose when \(N = n\), \(2^n \ge n\) where \(n\) is a positive integer.
+We know \(n \ge 1\).
+
+When \(N = n +1\), \(2^{n+1} = 2^n \times 2\). Because \(2 = 1 + 1\), by laws of algebra,
+\begin{equation*}
+  \begin{aligned}
+    2^{n+1} & = 2^n \times (1 + 1)\\
+    &= (2^n \times 1) + (2^n \times 1)\\
+    &= 2^n  + 2^n\\
+  \end{aligned}
+\end{equation*}
+Because addition of intergers preserves order, we have \(2^{n+1} \ge 2^n + n \ge n + n \ge n + 1\).
+Thus \(2^N \ge N\) when \(N = n + 1\).
+
+Therefore, \(2^N \geq N\) for all positive integers \(N\).
+
+
+\end{flushleft}
+
+\end{document}
